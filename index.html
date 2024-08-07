@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="cupcake">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Burst</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon" />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Tailwind And DaisyUI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "primary-color": "#F85559",
+              "footer-color": "#121212",
+              "white-color": "#FFFFFF",
+            },
+            backgroundImage: {
+              "banner-slide-1": "url('./images/banner1.png')",
+              "banner-slide-2": "url('./images/banner2.png')",
+              "banner-slide-3": "url('./images/banner3.png')",
+              "banner-slide-4": "url('./images/banner4.png')",
+              "team-slide": "url('./images/team.png')",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- This is Header Section -->
+    <header>
+      <!-- Navber -->
+      <nav
+        class="py-2 mt-5 ml-5 mr-5 mx-auto md:ml-10 md:mr-10 xl:ml-40 xl:mr-40 xl:mx-auto mb-10 flex flex-row justify-between items-center bg-primary-color px-5 rounded-full"
+      >
+        <!-- Drawer -->
+        <input id="my-drawer" type="checkbox" class="drawer-toggle" />
+
+        <!-- Nav Start -->
+        <div class="hidden lg:block">
+          <!-- Nav Manu -->
+          <ul
+            class="menu menu-horizontal px-1 text-sm font-medium text-gray-100"
+          >
+            <li><a href="#">Home</a></li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Shop</a>
+            </li>
+            <li>
+              <a href="#">All Fruits</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Nav Center -->
+        <div class="w-32 md:w-56">
+          <!-- Nav Logo -->
+          <a
+            class="cursor-pointer flex flex-row gap-2 lg:gap-5 justify-center items-center"
+            ><img class="w-6 md:w-8 lg:w-10" src="./images/logo.png" alt="" />
+            <h1 class="text-lg md:text-xl lg:text-xl font-bold text-white">
+              Fruit Brust
+            </h1></a
+          >
+        </div>
+
+        <!-- Nav End -->
+        <div class="lg:flex lg:flex-row lg:justify-end lg:items-center lg:mr-0">
+          <!-- Search -->
+          <label
+            class="input input-bordered items-center gap-2 h-9 hidden lg:flex"
+          >
+            <input
+              type="text"
+              class="grow w-56 py-1"
+              placeholder="Search here"
+            />
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 16 16"
+              fill="currentColor"
+              class="h-4 w-4 opacity-70"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M9.965 11.026a5 5 0 1 1 1.06-1.06l2.755 2.754a.75.75 0 1 1-1.06 1.06l-2.755-2.754ZM10.5 7a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </label>
+
+          <!-- Menubars -->
+          <div class="flex-none lg:hidden">
+            <label
+              for="my-drawer"
+              aria-label="open sidebar"
+              class="btn btn-square btn-ghost"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                class="inline-block h-6 w-6 stroke-current"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                ></path>
+              </svg>
+            </label>
+          </div>
+        </div>
+
+        <!-- Drawer Side -->
+      </nav>
+    </header>
+
+    <!-- Flowbite Script -->
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+  </body>
+</html>
+
+<!-- 489380.37 -->
